@@ -23,7 +23,8 @@ function acclog = tune_crf(unary, pairwise, imgs, argsrange, groundtruth, txtout
 % using the matlab reshape function 
 %
 %
-% Kelvin Xu 05/2014
+% Yujia Li, 10/2012
+%
 
 % we add in the boykov jolly potentials
 npairwise = length(pairwise) + 1;

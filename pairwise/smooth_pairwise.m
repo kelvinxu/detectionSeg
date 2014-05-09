@@ -1,29 +1,25 @@
-function p = smooth_pairwise(imgs, verbose)
+function p = smooth_pairwise(imsz, imnum, verbose)
 % SMOOTH_PAIRWISE
 %
-% Generate constant smoothing pairwise terms for a set of images.
+% Generate constant smoothing pairwise terms for a set of uniform size images.
 %
 % Usage:
-% p = smooth_pairwise(imgs, verbose)
+% p = smooth_pairwise(imsz, imnum, verbose)
 %
-% Kelvin Xu, 05/2014
+% Yujia Li, 10/2012
 %
 
-imnum = length(imgs);
 p = cell(imnum, 1);
 
-for i = 1 : imnum
-    [nx, ny, ~] = size(imgs{i});
-    pb = zeros(prod([nx,ny]),1);
-    
-    psingle = pairwise2pb(pb, [nx,ny]);
-    psingle = psingle / max(max(psingle));
+pb = zeros(imsz);
 
+psingle = pb2pairwise(pb);
+psingle = psingle / max(max(psingle));
+
+for i = 1 : imnum
     p{i} = psingle;
-    if verbose
-        sprintf('Done %d images\n', i);
-    end
 end
 
+return
 end
 
