@@ -1,0 +1,232 @@
+cd matlab_segmentation/unary/
+model = mlp2layer_train(tr_imgs{1}(:,[1:107,110]),t_labels, 85, 0.35, 0.9, 0, 4000, 20, v_data{1}(:,[1:107,110]), v_labels, 200, '/u/xukelvin/matlab_segmentation/models/apr8/hard/85'); diary off;
+{Undefined variable "tr_imgs" or class "tr_imgs".
+} 
+cd ../..
+load trainset_allfeatures_2
+model = mlp2layer_train(tr_imgs{1}(:,[1:107,112]),t_labels, 85, 0.35, 0.9, 0, 4000, 20, v_data{1}(:,[1:107,112]), v_labels, 200, '/u/xukelvin/matlab_segmentation/models/apr8/mask/85'); diary off;
+{Undefined function 'mlp2layer_train' for input arguments of type 'double'.
+} 
+cd matlab_segmentation/unary/
+model = mlp2layer_train(tr_imgs{1}(:,[1:107,112]),t_labels, 85, 0.35, 0.9, 0, 4000, 20, v_data{1}(:,[1:107,112]), v_labels, 200, '/u/xukelvin/matlab_segmentation/models/apr8/mask/85'); diary off;
+Training started...
+Epoch     0. Accuracy: 0.500010  ValAcc: 0.500006  w2inc: 0.000000  w1inc: 0.000000  etime: 0.000000
+Epoch    20. Accuracy: 0.500010  ValAcc: 0.500006  w2inc: 0.014015  w1inc: 0.005140  etime: 121.655068
+{Error using *
+Out of memory. Type HELP MEMORY for your options.
+
+Error in mlp2layer_train (line 137)
+    dldx1 = (t - y) * w2;
+} 
+exit
+model = mlp2layer_train(tr_imgs{1}(:,[1:107,112]),t_labels, 85, 0.35, 0.9, 0, 4000, 20, v_data{1}(:,[1:107,112]), v_labels, 200, '/u/xukelvin/matlab_segmentation/models/apr8/mask/85'); diary off;
+{Undefined variable "tr_imgs" or class "tr_imgs".
+} 
+load trainset_allfeatures_2
+model = mlp2layer_train(tr_imgs{1}(:,[1:107,112]),t_labels, 85, 0.35, 0.9, 0, 4000, 20, v_data{1}(:,[1:107,112]), v_labels, 200, '/u/xukelvin/matlab_segmentation/models/apr8/mask/85'); diary off;
+{Undefined function 'mlp2layer_train' for input arguments of type 'double'.
+} 
+cd matlab_segmentation/unary/
+model = mlp2layer_train(tr_imgs{1}(:,[1:107,112]),t_labels, 85, 0.35, 0.9, 0, 4000, 20, v_data{1}(:,[1:107,112]), v_labels, 200, '/u/xukelvin/matlab_segmentation/models/apr8/mask/85'); diary off;
+Training started...
+Epoch     0. Accuracy: 0.500010  ValAcc: 0.500006  w2inc: 0.000000  w1inc: 0.000000  etime: 0.000000
+Epoch    20. Accuracy: 0.500010  ValAcc: 0.500006  w2inc: 0.014015  w1inc: 0.005140  etime: 43.018102
+Epoch    40. Accuracy: 0.907183  ValAcc: 0.946546  w2inc: 0.029426  w1inc: 0.060657  etime: 43.119286
+Epoch    60. Accuracy: 0.920502  ValAcc: 0.958917  w2inc: 0.002065  w1inc: 0.005754  etime: 54.712022
+Epoch    80. Accuracy: 0.923327  ValAcc: 0.962279  w2inc: 0.003145  w1inc: 0.006136  etime: 56.580926
+Epoch   100. Accuracy: 0.924639  ValAcc: 0.963192  w2inc: 0.001152  w1inc: 0.005526  etime: 58.746803
+Epoch   120. Accuracy: 0.925479  ValAcc: 0.963589  w2inc: 0.002149  w1inc: 0.004464  etime: 72.948347
+Epoch   140. Accuracy: 0.926700  ValAcc: 0.964149  w2inc: 0.001928  w1inc: 0.004515  etime: 73.929948
+Epoch   160. Accuracy: 0.927774  ValAcc: 0.964476  w2inc: 0.001656  w1inc: 0.004469  etime: 93.994948
+Epoch   180. Accuracy: 0.928689  ValAcc: 0.964765  w2inc: 0.001424  w1inc: 0.004230  etime: 94.849476
+Epoch   200. Accuracy: 0.929471  ValAcc: 0.965000  w2inc: 0.001431  w1inc: 0.003917  etime: 94.251832
+Epoch   220. Accuracy: 0.930212  ValAcc: 0.965180  w2inc: 0.001543  w1inc: 0.003593  etime: 94.282963
+Epoch   240. Accuracy: 0.930935  ValAcc: 0.965295  w2inc: 0.001559  w1inc: 0.003280  etime: 93.580738
+Epoch   260. Accuracy: 0.931572  ValAcc: 0.965397  w2inc: 0.001489  w1inc: 0.002979  etime: 98.222567
+Epoch   280. Accuracy: 0.932259  ValAcc: 0.965388  w2inc: 0.001361  w1inc: 0.002696  etime: 94.409917
+Epoch   300. Accuracy: 0.932763  ValAcc: 0.965428  w2inc: 0.001206  w1inc: 0.002439  etime: 95.144306
+Epoch   320. Accuracy: 0.933181  ValAcc: 0.965374  w2inc: 0.001049  w1inc: 0.002437  etime: 95.413006
+Epoch   340. Accuracy: 0.933586  ValAcc: 0.965343  w2inc: 0.000906  w1inc: 0.002443  etime: 93.045274
+Epoch   360. Accuracy: 0.933948  ValAcc: 0.965390  w2inc: 0.000790  w1inc: 0.002426  etime: 96.120719
+Epoch   380. Accuracy: 0.934297  ValAcc: 0.965372  w2inc: 0.000707  w1inc: 0.002395  etime: 93.365267
+Epoch   400. Accuracy: 0.934619  ValAcc: 0.965410  w2inc: 0.000658  w1inc: 0.002357  etime: 97.345404
+Epoch   420. Accuracy: 0.934885  ValAcc: 0.965343  w2inc: 0.000636  w1inc: 0.002317  etime: 100.148159
+Epoch   440. Accuracy: 0.935157  ValAcc: 0.965322  w2inc: 0.000632  w1inc: 0.002275  etime: 95.489277
+Epoch   460. Accuracy: 0.935472  ValAcc: 0.965198  w2inc: 0.000637  w1inc: 0.002235  etime: 95.665145
+Epoch   480. Accuracy: 0.935763  ValAcc: 0.965160  w2inc: 0.000650  w1inc: 0.002194  etime: 93.262610
+Epoch   500. Accuracy: 0.935986  ValAcc: 0.965139  w2inc: 0.000698  w1inc: 0.002154  etime: 93.591855
+Epoch   520. Accuracy: 0.936237  ValAcc: 0.965088  w2inc: 0.000743  w1inc: 0.002114  etime: 96.626088
+Epoch   540. Accuracy: 0.936518  ValAcc: 0.965117  w2inc: 0.000784  w1inc: 0.002073  etime: 95.301119
+Epoch   560. Accuracy: 0.936821  ValAcc: 0.965167  w2inc: 0.000820  w1inc: 0.002033  etime: 94.382234
+Epoch   580. Accuracy: 0.937076  ValAcc: 0.965148  w2inc: 0.000851  w1inc: 0.001992  etime: 93.901180
+Epoch   600. Accuracy: 0.937305  ValAcc: 0.965130  w2inc: 0.000877  w1inc: 0.001951  etime: 96.304460
+Epoch   620. Accuracy: 0.937532  ValAcc: 0.965139  w2inc: 0.000899  w1inc: 0.001910  etime: 92.999464
+Epoch   640. Accuracy: 0.937789  ValAcc: 0.965115  w2inc: 0.000918  w1inc: 0.001869  etime: 95.387654
+Epoch   660. Accuracy: 0.938035  ValAcc: 0.965094  w2inc: 0.000934  w1inc: 0.001828  etime: 94.627357
+Epoch   680. Accuracy: 0.938289  ValAcc: 0.965076  w2inc: 0.000949  w1inc: 0.001786  etime: 93.196946
+Epoch   700. Accuracy: 0.938520  ValAcc: 0.965018  w2inc: 0.000961  w1inc: 0.001744  etime: 92.047290
+Epoch   720. Accuracy: 0.938783  ValAcc: 0.964991  w2inc: 0.000972  w1inc: 0.001701  etime: 98.882256
+Epoch   740. Accuracy: 0.938989  ValAcc: 0.964988  w2inc: 0.000982  w1inc: 0.001659  etime: 93.248274
+Epoch   760. Accuracy: 0.939228  ValAcc: 0.964975  w2inc: 0.000992  w1inc: 0.001615  etime: 94.918964
+Epoch   780. Accuracy: 0.939414  ValAcc: 0.964988  w2inc: 0.001002  w1inc: 0.001572  etime: 92.421143
+Epoch   800. Accuracy: 0.939670  ValAcc: 0.964941  w2inc: 0.001013  w1inc: 0.001528  etime: 94.433469
+Epoch   820. Accuracy: 0.939905  ValAcc: 0.964948  w2inc: 0.001026  w1inc: 0.001484  etime: 94.320477
+Epoch   840. Accuracy: 0.940158  ValAcc: 0.964923  w2inc: 0.001043  w1inc: 0.001440  etime: 95.897139
+Epoch   860. Accuracy: 0.940389  ValAcc: 0.964982  w2inc: 0.001065  w1inc: 0.001567  etime: 95.564907
+Epoch   880. Accuracy: 0.940622  ValAcc: 0.964986  w2inc: 0.001095  w1inc: 0.001721  etime: 93.046813
+Epoch   900. Accuracy: 0.940884  ValAcc: 0.965004  w2inc: 0.001134  w1inc: 0.001886  etime: 98.871104
+Epoch   920. Accuracy: 0.941147  ValAcc: 0.964997  w2inc: 0.001185  w1inc: 0.002057  etime: 96.954371
+Epoch   940. Accuracy: 0.941395  ValAcc: 0.965027  w2inc: 0.001250  w1inc: 0.002226  etime: 95.759474
+Epoch   960. Accuracy: 0.941668  ValAcc: 0.965092  w2inc: 0.001328  w1inc: 0.002384  etime: 97.011927
+Epoch   980. Accuracy: 0.941981  ValAcc: 0.965198  w2inc: 0.001419  w1inc: 0.002516  etime: 93.754616
+Epoch  1000. Accuracy: 0.942291  ValAcc: 0.965236  w2inc: 0.001519  w1inc: 0.002611  etime: 96.040067
+Epoch  1020. Accuracy: 0.942592  ValAcc: 0.965282  w2inc: 0.001623  w1inc: 0.002753  etime: 97.349249
+Epoch  1040. Accuracy: 0.942903  ValAcc: 0.965313  w2inc: 0.001726  w1inc: 0.002997  etime: 95.323480
+Epoch  1060. Accuracy: 0.943224  ValAcc: 0.965412  w2inc: 0.001822  w1inc: 0.003235  etime: 93.428119
+Epoch  1080. Accuracy: 0.943496  ValAcc: 0.965467  w2inc: 0.001906  w1inc: 0.003469  etime: 95.038225
+Epoch  1100. Accuracy: 0.943783  ValAcc: 0.965446  w2inc: 0.001979  w1inc: 0.003698  etime: 95.791848
+Epoch  1120. Accuracy: 0.944051  ValAcc: 0.965390  w2inc: 0.002039  w1inc: 0.003923  etime: 97.509004
+Epoch  1140. Accuracy: 0.944339  ValAcc: 0.965345  w2inc: 0.002089  w1inc: 0.004145  etime: 95.011438
+Epoch  1160. Accuracy: 0.944623  ValAcc: 0.965268  w2inc: 0.002133  w1inc: 0.004359  etime: 95.816930
+Epoch  1180. Accuracy: 0.944909  ValAcc: 0.965178  w2inc: 0.002174  w1inc: 0.004559  etime: 93.194210
+Epoch  1200. Accuracy: 0.945239  ValAcc: 0.965121  w2inc: 0.002213  w1inc: 0.004732  etime: 97.368487
+Epoch  1220. Accuracy: 0.945546  ValAcc: 0.965060  w2inc: 0.002249  w1inc: 0.004866  etime: 94.630068
+Epoch  1240. Accuracy: 0.945893  ValAcc: 0.964943  w2inc: 0.002282  w1inc: 0.004947  etime: 99.465007
+Epoch  1260. Accuracy: 0.946202  ValAcc: 0.964830  w2inc: 0.002308  w1inc: 0.004971  etime: 93.702474
+Epoch  1280. Accuracy: 0.946505  ValAcc: 0.964709  w2inc: 0.002323  w1inc: 0.004937  etime: 93.248726
+Epoch  1300. Accuracy: 0.946813  ValAcc: 0.964510  w2inc: 0.002325  w1inc: 0.004851  etime: 94.342584
+Epoch  1320. Accuracy: 0.947123  ValAcc: 0.964370  w2inc: 0.002311  w1inc: 0.004723  etime: 94.159180
+Epoch  1340. Accuracy: 0.947443  ValAcc: 0.964266  w2inc: 0.002283  w1inc: 0.004565  etime: 95.281961
+Epoch  1360. Accuracy: 0.947749  ValAcc: 0.964111  w2inc: 0.002241  w1inc: 0.004389  etime: 93.658559
+Epoch  1380. Accuracy: 0.948064  ValAcc: 0.963941  w2inc: 0.002186  w1inc: 0.004205  etime: 95.610006
+Epoch  1400. Accuracy: 0.948390  ValAcc: 0.963795  w2inc: 0.002121  w1inc: 0.004019  etime: 93.645838
+Epoch  1420. Accuracy: 0.948756  ValAcc: 0.963659  w2inc: 0.002122  w1inc: 0.003838  etime: 94.879571
+Epoch  1440. Accuracy: 0.949091  ValAcc: 0.963519  w2inc: 0.002155  w1inc: 0.003667  etime: 94.869634
+Epoch  1460. Accuracy: 0.949377  ValAcc: 0.963373  w2inc: 0.002174  w1inc: 0.003510  etime: 94.906789
+Epoch  1480. Accuracy: 0.949666  ValAcc: 0.963240  w2inc: 0.002175  w1inc: 0.003368  etime: 95.888083
+Epoch  1500. Accuracy: 0.949986  ValAcc: 0.963091  w2inc: 0.002159  w1inc: 0.003239  etime: 98.308196
+Epoch  1520. Accuracy: 0.950248  ValAcc: 0.962996  w2inc: 0.002129  w1inc: 0.003119  etime: 96.858133
+Epoch  1540. Accuracy: 0.950553  ValAcc: 0.962867  w2inc: 0.002090  w1inc: 0.003007  etime: 94.828991
+Epoch  1560. Accuracy: 0.950790  ValAcc: 0.962768  w2inc: 0.002044  w1inc: 0.002900  etime: 98.249087
+Epoch  1580. Accuracy: 0.951052  ValAcc: 0.962667  w2inc: 0.001993  w1inc: 0.002796  etime: 99.444025
+Epoch  1600. Accuracy: 0.951285  ValAcc: 0.962522  w2inc: 0.001937  w1inc: 0.002693  etime: 94.109460
+Epoch  1620. Accuracy: 0.951521  ValAcc: 0.962427  w2inc: 0.001880  w1inc: 0.002591  etime: 97.210038
+Epoch  1640. Accuracy: 0.951759  ValAcc: 0.962353  w2inc: 0.001821  w1inc: 0.002491  etime: 93.510893
+Epoch  1660. Accuracy: 0.951969  ValAcc: 0.962310  w2inc: 0.001761  w1inc: 0.002391  etime: 99.792615
+Epoch  1680. Accuracy: 0.952185  ValAcc: 0.962263  w2inc: 0.001702  w1inc: 0.002295  etime: 94.140052
+Epoch  1700. Accuracy: 0.952412  ValAcc: 0.962213  w2inc: 0.001644  w1inc: 0.002201  etime: 95.049626
+Epoch  1720. Accuracy: 0.952606  ValAcc: 0.962179  w2inc: 0.001586  w1inc: 0.002111  etime: 94.704231
+Epoch  1740. Accuracy: 0.952774  ValAcc: 0.962127  w2inc: 0.001531  w1inc: 0.002026  etime: 97.900764
+Epoch  1760. Accuracy: 0.952932  ValAcc: 0.962076  w2inc: 0.001477  w1inc: 0.001944  etime: 96.735663
+Epoch  1780. Accuracy: 0.953120  ValAcc: 0.962053  w2inc: 0.001426  w1inc: 0.001867  etime: 93.299974
+Epoch  1800. Accuracy: 0.953265  ValAcc: 0.961972  w2inc: 0.001377  w1inc: 0.001793  etime: 96.270279
+Epoch  1820. Accuracy: 0.953421  ValAcc: 0.961954  w2inc: 0.001331  w1inc: 0.001723  etime: 95.259328
+Epoch  1840. Accuracy: 0.953609  ValAcc: 0.961911  w2inc: 0.001287  w1inc: 0.001656  etime: 96.955248
+Epoch  1860. Accuracy: 0.953741  ValAcc: 0.961870  w2inc: 0.001246  w1inc: 0.001593  etime: 95.256384
+Epoch  1880. Accuracy: 0.953875  ValAcc: 0.961789  w2inc: 0.001207  w1inc: 0.001533  etime: 96.430084
+Epoch  1900. Accuracy: 0.954024  ValAcc: 0.961816  w2inc: 0.001170  w1inc: 0.001475  etime: 95.882202
+Epoch  1920. Accuracy: 0.954147  ValAcc: 0.961771  w2inc: 0.001135  w1inc: 0.001421  etime: 92.957634
+Epoch  1940. Accuracy: 0.954316  ValAcc: 0.961744  w2inc: 0.001103  w1inc: 0.001369  etime: 94.905086
+Epoch  1960. Accuracy: 0.954456  ValAcc: 0.961780  w2inc: 0.001072  w1inc: 0.001345  etime: 93.367271
+Epoch  1980. Accuracy: 0.954640  ValAcc: 0.961755  w2inc: 0.001043  w1inc: 0.001321  etime: 100.116546
+Epoch  2000. Accuracy: 0.954799  ValAcc: 0.961724  w2inc: 0.001016  w1inc: 0.001299  etime: 96.973519
+Epoch  2020. Accuracy: 0.954929  ValAcc: 0.961690  w2inc: 0.000990  w1inc: 0.001276  etime: 95.701532
+Epoch  2040. Accuracy: 0.955038  ValAcc: 0.961721  w2inc: 0.000966  w1inc: 0.001254  etime: 95.290429
+Epoch  2060. Accuracy: 0.955201  ValAcc: 0.961667  w2inc: 0.000951  w1inc: 0.001232  etime: 97.713001
+Epoch  2080. Accuracy: 0.955320  ValAcc: 0.961660  w2inc: 0.000948  w1inc: 0.001236  etime: 98.032192
+Epoch  2100. Accuracy: 0.955429  ValAcc: 0.961633  w2inc: 0.000945  w1inc: 0.001242  etime: 94.343801
+Epoch  2120. Accuracy: 0.955558  ValAcc: 0.961615  w2inc: 0.000941  w1inc: 0.001247  etime: 97.147282
+Epoch  2140. Accuracy: 0.955689  ValAcc: 0.961622  w2inc: 0.000937  w1inc: 0.001250  etime: 97.369512
+Epoch  2160. Accuracy: 0.955792  ValAcc: 0.961581  w2inc: 0.000933  w1inc: 0.001252  etime: 96.294371
+Epoch  2180. Accuracy: 0.955925  ValAcc: 0.961566  w2inc: 0.000928  w1inc: 0.001253  etime: 97.102620
+Epoch  2200. Accuracy: 0.956018  ValAcc: 0.961548  w2inc: 0.000923  w1inc: 0.001253  etime: 96.415793
+Epoch  2220. Accuracy: 0.956118  ValAcc: 0.961514  w2inc: 0.000918  w1inc: 0.001251  etime: 95.001230
+Epoch  2240. Accuracy: 0.956236  ValAcc: 0.961536  w2inc: 0.000913  w1inc: 0.001249  etime: 93.496113
+Epoch  2260. Accuracy: 0.956349  ValAcc: 0.961520  w2inc: 0.000907  w1inc: 0.001262  etime: 94.138022
+Epoch  2280. Accuracy: 0.956452  ValAcc: 0.961525  w2inc: 0.000902  w1inc: 0.001316  etime: 95.160877
+Epoch  2300. Accuracy: 0.956585  ValAcc: 0.961500  w2inc: 0.000896  w1inc: 0.001370  etime: 93.261710
+Epoch  2320. Accuracy: 0.956690  ValAcc: 0.961527  w2inc: 0.000890  w1inc: 0.001424  etime: 95.279097
+Epoch  2340. Accuracy: 0.956789  ValAcc: 0.961457  w2inc: 0.000883  w1inc: 0.001477  etime: 96.967718
+Epoch  2360. Accuracy: 0.956885  ValAcc: 0.961505  w2inc: 0.000876  w1inc: 0.001528  etime: 92.962132
+Epoch  2380. Accuracy: 0.957014  ValAcc: 0.961523  w2inc: 0.000869  w1inc: 0.001576  etime: 95.545333
+Epoch  2400. Accuracy: 0.957113  ValAcc: 0.961536  w2inc: 0.000861  w1inc: 0.001620  etime: 93.210457
+Epoch  2420. Accuracy: 0.957212  ValAcc: 0.961543  w2inc: 0.000853  w1inc: 0.001658  etime: 94.671781
+Epoch  2440. Accuracy: 0.957303  ValAcc: 0.961505  w2inc: 0.000845  w1inc: 0.001691  etime: 93.774036
+Epoch  2460. Accuracy: 0.957427  ValAcc: 0.961475  w2inc: 0.000836  w1inc: 0.001717  etime: 95.024319
+Epoch  2480. Accuracy: 0.957518  ValAcc: 0.961442  w2inc: 0.000827  w1inc: 0.001737  etime: 99.802048
+Epoch  2500. Accuracy: 0.957606  ValAcc: 0.961439  w2inc: 0.000817  w1inc: 0.001751  etime: 94.034855
+Epoch  2520. Accuracy: 0.957719  ValAcc: 0.961462  w2inc: 0.000808  w1inc: 0.001758  etime: 96.583829
+Epoch  2540. Accuracy: 0.957808  ValAcc: 0.961493  w2inc: 0.000798  w1inc: 0.001759  etime: 95.379302
+Epoch  2560. Accuracy: 0.957896  ValAcc: 0.961491  w2inc: 0.000788  w1inc: 0.001756  etime: 94.184512
+Epoch  2580. Accuracy: 0.957972  ValAcc: 0.961530  w2inc: 0.000778  w1inc: 0.001748  etime: 95.029603
+Epoch  2600. Accuracy: 0.958060  ValAcc: 0.961570  w2inc: 0.000768  w1inc: 0.001736  etime: 97.731764
+Epoch  2620. Accuracy: 0.958158  ValAcc: 0.961550  w2inc: 0.000758  w1inc: 0.001721  etime: 99.889093
+Epoch  2640. Accuracy: 0.958243  ValAcc: 0.961502  w2inc: 0.000748  w1inc: 0.001702  etime: 98.554442
+Epoch  2660. Accuracy: 0.958323  ValAcc: 0.961523  w2inc: 0.000738  w1inc: 0.001681  etime: 94.063856
+Epoch  2680. Accuracy: 0.958432  ValAcc: 0.961572  w2inc: 0.000728  w1inc: 0.001658  etime: 98.407212
+Epoch  2700. Accuracy: 0.958557  ValAcc: 0.961541  w2inc: 0.000718  w1inc: 0.001634  etime: 97.853362
+Epoch  2720. Accuracy: 0.958666  ValAcc: 0.961557  w2inc: 0.000709  w1inc: 0.001609  etime: 94.595743
+Epoch  2740. Accuracy: 0.958768  ValAcc: 0.961570  w2inc: 0.000699  w1inc: 0.001583  etime: 94.982234
+Epoch  2760. Accuracy: 0.958870  ValAcc: 0.961561  w2inc: 0.000690  w1inc: 0.001557  etime: 97.636093
+Epoch  2780. Accuracy: 0.958952  ValAcc: 0.961627  w2inc: 0.000681  w1inc: 0.001532  etime: 94.833690
+Epoch  2800. Accuracy: 0.959025  ValAcc: 0.961645  w2inc: 0.000672  w1inc: 0.001507  etime: 93.948522
+Epoch  2820. Accuracy: 0.959143  ValAcc: 0.961678  w2inc: 0.000663  w1inc: 0.001482  etime: 100.545737
+Epoch  2840. Accuracy: 0.959227  ValAcc: 0.961681  w2inc: 0.000655  w1inc: 0.001457  etime: 91.993515
+Epoch  2860. Accuracy: 0.959325  ValAcc: 0.961708  w2inc: 0.000647  w1inc: 0.001433  etime: 94.902520
+Epoch  2880. Accuracy: 0.959443  ValAcc: 0.961726  w2inc: 0.000639  w1inc: 0.001410  etime: 93.088303
+Epoch  2900. Accuracy: 0.959546  ValAcc: 0.961766  w2inc: 0.000632  w1inc: 0.001386  etime: 96.833433
+Epoch  2920. Accuracy: 0.959636  ValAcc: 0.961764  w2inc: 0.000625  w1inc: 0.001363  etime: 94.093127
+Epoch  2940. Accuracy: 0.959701  ValAcc: 0.961789  w2inc: 0.000618  w1inc: 0.001340  etime: 96.694749
+Epoch  2960. Accuracy: 0.959771  ValAcc: 0.961814  w2inc: 0.000612  w1inc: 0.001317  etime: 93.356110
+Epoch  2980. Accuracy: 0.959845  ValAcc: 0.961845  w2inc: 0.000606  w1inc: 0.001295  etime: 95.686818
+Epoch  3000. Accuracy: 0.959953  ValAcc: 0.961872  w2inc: 0.000600  w1inc: 0.001273  etime: 99.159240
+Epoch  3020. Accuracy: 0.960053  ValAcc: 0.961902  w2inc: 0.000594  w1inc: 0.001251  etime: 97.994034
+Epoch  3040. Accuracy: 0.960141  ValAcc: 0.961895  w2inc: 0.000589  w1inc: 0.001229  etime: 94.613862
+Epoch  3060. Accuracy: 0.960221  ValAcc: 0.961893  w2inc: 0.000584  w1inc: 0.001208  etime: 96.089008
+Epoch  3080. Accuracy: 0.960324  ValAcc: 0.961929  w2inc: 0.000580  w1inc: 0.001187  etime: 94.855342
+Epoch  3100. Accuracy: 0.960416  ValAcc: 0.961922  w2inc: 0.000575  w1inc: 0.001166  etime: 95.803489
+Epoch  3120. Accuracy: 0.960483  ValAcc: 0.961951  w2inc: 0.000571  w1inc: 0.001146  etime: 94.824527
+Epoch  3140. Accuracy: 0.960559  ValAcc: 0.961949  w2inc: 0.000567  w1inc: 0.001126  etime: 93.984098
+Epoch  3160. Accuracy: 0.960651  ValAcc: 0.961960  w2inc: 0.000563  w1inc: 0.001106  etime: 93.472029
+Epoch  3180. Accuracy: 0.960748  ValAcc: 0.961967  w2inc: 0.000559  w1inc: 0.001087  etime: 97.113436
+Epoch  3200. Accuracy: 0.960844  ValAcc: 0.961960  w2inc: 0.000555  w1inc: 0.001068  etime: 95.037224
+Epoch  3220. Accuracy: 0.960939  ValAcc: 0.962001  w2inc: 0.000552  w1inc: 0.001049  etime: 94.912593
+Epoch  3240. Accuracy: 0.961006  ValAcc: 0.962037  w2inc: 0.000549  w1inc: 0.001031  etime: 94.369057
+Epoch  3260. Accuracy: 0.961088  ValAcc: 0.962069  w2inc: 0.000545  w1inc: 0.001013  etime: 97.577906
+Epoch  3280. Accuracy: 0.961179  ValAcc: 0.962057  w2inc: 0.000542  w1inc: 0.000996  etime: 96.791920
+Epoch  3300. Accuracy: 0.961236  ValAcc: 0.962060  w2inc: 0.000540  w1inc: 0.000978  etime: 101.166715
+Epoch  3320. Accuracy: 0.961346  ValAcc: 0.962062  w2inc: 0.000537  w1inc: 0.000962  etime: 93.594741
+Epoch  3340. Accuracy: 0.961437  ValAcc: 0.962048  w2inc: 0.000534  w1inc: 0.000945  etime: 95.697878
+Epoch  3360. Accuracy: 0.961513  ValAcc: 0.962051  w2inc: 0.000532  w1inc: 0.000929  etime: 95.083394
+Epoch  3380. Accuracy: 0.961594  ValAcc: 0.962069  w2inc: 0.000530  w1inc: 0.000913  etime: 96.122740
+Epoch  3400. Accuracy: 0.961664  ValAcc: 0.962030  w2inc: 0.000527  w1inc: 0.000904  etime: 93.908787
+Epoch  3420. Accuracy: 0.961744  ValAcc: 0.962028  w2inc: 0.000525  w1inc: 0.000905  etime: 95.662265
+Epoch  3440. Accuracy: 0.961844  ValAcc: 0.962021  w2inc: 0.000523  w1inc: 0.000905  etime: 94.275533
+Epoch  3460. Accuracy: 0.961924  ValAcc: 0.962030  w2inc: 0.000522  w1inc: 0.000906  etime: 97.681349
+Epoch  3480. Accuracy: 0.962007  ValAcc: 0.962037  w2inc: 0.000520  w1inc: 0.000907  etime: 96.558655
+Epoch  3500. Accuracy: 0.962084  ValAcc: 0.961992  w2inc: 0.000518  w1inc: 0.000908  etime: 95.090671
+Epoch  3520. Accuracy: 0.962159  ValAcc: 0.961990  w2inc: 0.000517  w1inc: 0.000910  etime: 93.371425
+Epoch  3540. Accuracy: 0.962242  ValAcc: 0.962010  w2inc: 0.000516  w1inc: 0.000911  etime: 93.776226
+Epoch  3560. Accuracy: 0.962339  ValAcc: 0.962006  w2inc: 0.000515  w1inc: 0.000913  etime: 94.681050
+Epoch  3580. Accuracy: 0.962410  ValAcc: 0.962019  w2inc: 0.000514  w1inc: 0.000915  etime: 96.519909
+Epoch  3600. Accuracy: 0.962474  ValAcc: 0.962037  w2inc: 0.000513  w1inc: 0.000917  etime: 94.842071
+Epoch  3620. Accuracy: 0.962545  ValAcc: 0.962008  w2inc: 0.000512  w1inc: 0.000919  etime: 94.711647
+Epoch  3640. Accuracy: 0.962623  ValAcc: 0.961965  w2inc: 0.000512  w1inc: 0.000921  etime: 97.586882
+Epoch  3660. Accuracy: 0.962707  ValAcc: 0.961965  w2inc: 0.000511  w1inc: 0.000924  etime: 97.279614
+Epoch  3680. Accuracy: 0.962817  ValAcc: 0.961960  w2inc: 0.000511  w1inc: 0.000927  etime: 93.964197
+Epoch  3700. Accuracy: 0.962890  ValAcc: 0.961927  w2inc: 0.000511  w1inc: 0.000930  etime: 95.295091
+Epoch  3720. Accuracy: 0.962958  ValAcc: 0.961918  w2inc: 0.000512  w1inc: 0.000933  etime: 96.147458
+Epoch  3740. Accuracy: 0.963035  ValAcc: 0.961945  w2inc: 0.000512  w1inc: 0.000937  etime: 94.206184
+Epoch  3760. Accuracy: 0.963103  ValAcc: 0.961938  w2inc: 0.000513  w1inc: 0.000940  etime: 94.740259
+Epoch  3780. Accuracy: 0.963200  ValAcc: 0.961918  w2inc: 0.000513  w1inc: 0.000944  etime: 94.689040
+Epoch  3800. Accuracy: 0.963278  ValAcc: 0.961936  w2inc: 0.000514  w1inc: 0.000949  etime: 96.375055
+Epoch  3820. Accuracy: 0.963348  ValAcc: 0.961904  w2inc: 0.000516  w1inc: 0.000953  etime: 97.832577
+Epoch  3840. Accuracy: 0.963433  ValAcc: 0.961900  w2inc: 0.000517  w1inc: 0.000958  etime: 91.388523
+Epoch  3860. Accuracy: 0.963498  ValAcc: 0.961879  w2inc: 0.000519  w1inc: 0.000963  etime: 94.943983
+Epoch  3880. Accuracy: 0.963605  ValAcc: 0.961845  w2inc: 0.000520  w1inc: 0.000969  etime: 95.956839
+Epoch  3900. Accuracy: 0.963688  ValAcc: 0.961784  w2inc: 0.000522  w1inc: 0.000974  etime: 95.165884
+Epoch  3920. Accuracy: 0.963754  ValAcc: 0.961757  w2inc: 0.000525  w1inc: 0.000980  etime: 96.402757
+Epoch  3940. Accuracy: 0.963868  ValAcc: 0.961755  w2inc: 0.000527  w1inc: 0.000986  etime: 96.907323
+Epoch  3960. Accuracy: 0.963912  ValAcc: 0.961748  w2inc: 0.000530  w1inc: 0.000993  etime: 96.988117
+Epoch  3980. Accuracy: 0.963983  ValAcc: 0.961712  w2inc: 0.000532  w1inc: 0.001000  etime: 95.680141
+Epoch  4000. Accuracy: 0.964078  ValAcc: 0.961717  w2inc: 0.000535  w1inc: 0.001007  etime: 95.409398

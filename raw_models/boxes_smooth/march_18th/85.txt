@@ -1,0 +1,4 @@
+model = mlp2layer_train(tdata{1},tlabels, 85, 0.35, 0.9, 0, 4000, 20, vdata{1}, vlabels, 200, '/u/xukelvin/matlab_segmentation/models/boxes_smooth/march_18th/85'); diary off;
+{Undefined function 'mlp2layer_train' for input arguments of type 'double'.
+} 
+

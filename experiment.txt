@@ -1,0 +1,72 @@
+100 plane images: 25% pixel sampling 
+
+Dataset-1: Smooth Gaussian No Noise
+Dataset-2: Noise ~ guassian var = 1 * length^2/5
+	- implicitly two controls here if we remove bounding box features
+
+Dataset 3- ditto 1, hard feature
+Dataset 4- ditto 2, hard features
+
+Dataset 5, mask feature 
+Dateset 6, mask feature 
+
+cluster 3: mask, hard, 
+cluster 4: smooth, control
+
+Commands
+
+control <-- used noise-smooth-train.mat
+
+train 75 units 85 units
+
+save in matlab_segmentation_models
+
+
+diary('/h/53/xukelvin/matlab_segmentation/models/may8/control/85.txt');
+model = mlp2layer_train(tdata{1}(:,[1:107]),tlabels, 85, 0.5, 0.9, 0, 4000, 20, vdata{1}(:,[1:107]), vlabels, 200, '/h/53/xukelvin/matlab_segmentation/models/may8/control'); diary off;
+
+-------------
+
+generate a test set for every case:
+
+Choose best model for each case and run tuning code in parallel. 
+
+-> IOU and pixel accuracy. 
+
+1: smooth
+2: smooth noise. 
+3: hard
+4: hard noise
+5: mask
+6: mask noise
+
+after matlab reshape it will all be in order
+
+Best models
+
+1: smooth               800.mat
+2: smooth noise.        600.mat
+3: hard                 1600.mat
+4: hard noise           200.mat
+5: mask                 200.mat
+6: mask noise           1000.mat
+7. control              m4000.
+
+Rerunning experiment standardizing the set
+
+diary('/u/xukelvin/matlab_segmentation/models/apr7/smooth/85.txt'); 
+
+
+Rerunning experiments <--- keeping track of the mean and standard deviation of the training set 
+
+Best Models:
+
+Round 2:
+
+1: smooth   m800.mat
+2: smooth noise  m400.mat
+3: hard         m1200.mat 
+4: hard noise   m1400.mat
+5: mask         m3600.mat
+6: mask noise   m1400.mat
+

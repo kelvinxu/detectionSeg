@@ -1,0 +1,60 @@
+function [n_im, n_labels, n_bndboxes] = rescale(imgs, labels, bndboxes, new_dim)
+% 
+%    [n_im, n_labels, n_bndboxes] = rescale(imgs, labels, bndboxes, new_dim)
+% 
+%    Rescales images and bounding boxes into a standard size
+% 
+%    Kelvin Xu 05/2014
+% 
+imnum = length(imgs);
+
+n_im = cell(1,imnum);
+n_labels = cell(1,imnum);
+n_bndboxes = cell(1,imnum);
+
+z = 1;
+
+for i = 1 : imnum
+    n_im{i} = imresize(imgs{i}, new_dim);
+    n_labels{i} = imresize(labels{i}.cdata, new_dim, 'nearest');
+    [rows, cols, ~] = size(imgs{i});
+    if ~isempty(bndboxes{z})
+        for j = 1 : length(bndboxes{z})
+            n_bndboxes{i}.box{j} = scale_box(bndboxes{z}.box{j}, [rows,cols], new_dim);
+            z = z + 1;
+        end 
+    end
+end
+
+% sanity check code
+% figure; 
+% box = zeros(25, 4);
+% for i = 1:25
+%         [ceil(i/5), i - (floor(i/5))*5]
+%        subplot(5,5, [ceil(i/5), i - (floor(i/5))*5]);
+%        box(1,:) = n_bndboxes{i}.box{j}.box;
+%    showboxes(n_im{i}, box);
+% end
+
+end 
+
+
+function scaled_box = scale_box(box, imsz, s_imsz)
+%
+% scale_box(box, imsz)
+%
+% This function takes a bounding box, an image size, and a 
+% scaled image size
+%
+
+xscale = imsz(2)/s_imsz(2);
+yscale = imsz(1)/s_imsz(1);
+
+scaled_box.xmin = max(round(box.xmin / xscale), 1);
+scaled_box.xmax = min(round(box.xmax / xscale), imsz(2)); 
+scaled_box.ymin = max(round(box.ymin / yscale), 1); 
+scaled_box.ymax = min(round(box.ymax / yscale), imsz(1));
+
+scaled_box.box = [scaled_box.xmin scaled_box.ymin scaled_box.xmax scaled_box.ymax]; 
+
+end
